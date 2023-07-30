@@ -17,12 +17,16 @@
     align-items: center;
     justify-content: center;
     font-family: 'Open Sans', sans-serif;
+    position: relative;
+    top: 0;
 }
 
 #navbar::before{
     content: "";
     background-color: black;
     position: absolute;
+    top: 0;
+    left: 0;
     height: 100%;
     width: 100%;
     z-index: -1;
@@ -42,9 +46,7 @@
 
 
 /* Navigation bar : Listing*/
-#navbar {
-    position: relative;
-}
+
 
 #navbar ul{
     display: flex;
@@ -75,12 +77,14 @@
     padding: 3px 200px;
     justify-content: center;
     align-items: center;
-    height: 400px;
+    height: 650px;
 }
 #home::before{
 content: "";
 background: url(../img/bg.jpg) no-repeat center center/cover;
 position: absolute;
+top: 0;
+left: 0;
 height: 100%;
 width: 100%;
 z-index: -1;
@@ -106,10 +110,54 @@ opacity: 0.89;
     display: flex;
 }
 #services .box img{
+    /* margin: 2px solid red; */
     height: 156px;
+    display: block;
+    margin: auto;
+}
+#services .box{
+    border: 2px solid red;
+    /* height: 156px; */
+    padding: 34px;
+    margin: 3px 6px;
+    border-radius: 23px;
+    background-color: antiquewhite;
 }
     
-#services{}
+#services .box p{
+    font-family: 'Nunito', sans-serif;
+    
+}
+
+/* CLient section */
+
+#client-section{
+        height: 344px;
+        position: relative;
+}
+#client-section::before{
+        content: "";
+        position: absolute;
+        background: url("https://th.bing.com/th/id/OIP.zVSeFGhCESo6aWTXmeCdlgHaE7?pid=ImgDet&rs=1") no-repeat center center/cover;
+        height: 50%;
+        width: 100%;
+        z-index: -1;
+        opacity: 0.4;
+}
+
+.client-item{
+    padding: 30px;
+}
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#clients img{
+    height: 100px;
+    height: 100px;
+}
+
 
 
 /* utility classes */
@@ -117,9 +165,11 @@ opacity: 0.89;
 .h-primary{
     font-size: 3.8rem;
     padding: 12px;
+    font-family: 'Nunito', sans-serif;
 }
 .h-secondary{
-    font-size: 2.8rem;
+    font-family: 'Nunito', sans-serif;
+    font-size: 2.3rem;
     padding: 12px;
 }
 
